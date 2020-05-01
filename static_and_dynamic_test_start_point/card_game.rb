@@ -20,7 +20,7 @@ class CardGame
     else
       return card2
     end
-    end
+  end
 
 
   def self.cards_total(cards)
