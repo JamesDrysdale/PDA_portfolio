@@ -15,16 +15,16 @@ class CardGame
     end
   end
 
-  dif highest_card(card1 card2) # typo: dif should read def; the parameters must be seperated with a comma: (card1, card2)
+  dif highest_card(card1 card2) # typo: dif should read def; the parameters must be seperated with a comma: (card1, card2). Method not properly indented
   if card1.value > card2.value
     return card # 'card' is undefined. This must read: return card1
   else
     return card2
   end
 end
-end # This end statement isn't needed here and will cause errors. It needs to be after the end statement on line 33 to close the class
+end # This end statement isn't needed here and will cause errors. It needs to be after the end statement on line 33 to close the class, which needs to contain the method below as well
 
-def self.cards_total(cards)
+def self.cards_total(cards) #This whole method should be indented
   total # We need to set an initial value here and to do so must use: total = 0
   for card in cards
     total += card.value
